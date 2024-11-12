@@ -13,7 +13,7 @@ import NotFound from "./pages/NotFound";
 const App = () => {
   return (
     <>
-      <Router>
+      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Navbar />
         <Routes>
           <Route path="/login" element={<Login />} />
